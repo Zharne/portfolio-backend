@@ -2,29 +2,24 @@ const express = require("express")
 const nodemailer = require('nodemailer')
 const app = express.Router()
 
-const app = express.Router()
-
-app.get('/', (req, res) => {
-
-    var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
+app.post('/', (req, res) => {
+let{name,contact,message}= req.body;
+    
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'zharnedesember@gmail.com',
-    pass: 'yourpassword'
+    pass: 'zharne1997',
   }
 });
-
-var mailOptions = {
-  from: 'zharnedesember@gmail.com',
+const mailOptions = {
+  from: 'email',
   to: 'zharnedesember@gmail.com',
   subject: 'New contact from your portfolio',
   text: `${name} has contacted you
-
+  4
   Please contact them back on ${contact}
-  
-  ${message}`
+  ${message}`,
 };
 
 transporter.sendMail(mailOptions, function(error, info){
@@ -37,7 +32,5 @@ transporter.sendMail(mailOptions, function(error, info){
   }
 });
 });
-
-
 
 module.exports = app

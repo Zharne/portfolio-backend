@@ -5,27 +5,51 @@ const app = express.Router()
 let projects = [
     { "title": "Calculator", 
     "id": 1, 
-    "details": "lorem" },
+    "details": "lorem", 
+    "netlify":"",
+    "github":"",
+    "img":"",
+},
 
     {"title": "Online Store", 
     "id": 2,
-    "details": "lorem" },
+    "details": "lorem", 
+    "netlify":"",
+    "github":"",
+    "img":"",
+},
 
     {"title": "Reaction-timer",
     "id": 3, 
-    "details": "lorem" },
+    "details": "lorem", 
+    "netlify":"",
+    "github":"",
+    "img":"",
+},
 
     {"title": "Temperature converter",
     "id": 4,
-    "details": "lorem" },
+    "details": "lorem",
+    "netlify":"",
+    "github":"",
+    "img":"",
+     },
 
     {"title": "Bookstore",
     "id": 5,
-    "details": "lorem" },
+    "details": "lorem", 
+    "netlify":"",
+    "github":"",
+    "img":"",
+},
 
     {"title": "crud system",
     "id": 6,
-    "details": "lorem" }
+    "details": "lorem", 
+    "netlify":"",
+    "github":"",
+    "img":"",
+}
     
 ];
 // GET ALL PROJECTS
